@@ -1,0 +1,13 @@
+[build]
+command = "npm run build"
+publish = "dist"
+
+[functions]
+directory = "/netlify/functions"
+
+[[redirects]]
+from = "/events/"
+to = "/.netlify/builders/events"
+status = 200
+force = true
+_generated_by_eleventy_serverless = "events"
